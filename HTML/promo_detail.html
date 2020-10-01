@@ -1,0 +1,486 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" --> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- InstanceBeginEditable name="doctitle" -->
+        <title>List Ticket</title>
+        <!-- InstanceEndEditable -->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="fonts/flaticon.css">
+        <link rel="stylesheet" href="css/mobile.css" />
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <!-- InstanceBeginEditable name="head" -->
+        <!-- InstanceEndEditable -->
+    </head>
+    <body>
+    	<div class="login-popup cb-popup" id="login-block">
+        	
+                <div class="wrap-register">
+    
+                  <h2 class="title"><i class="glyphicon glyphicon-user"></i> LOGIN</h2>
+                  <div class="social-login clearfix">
+                    <a href="#" class="btn-login facebook">CONNECT WITH FACEBOOK</a>
+                    <a href="#" id="signInButton" class="btn-login google">CONNECT WITH GOOGLE +</a>
+                  </div>
+    
+                  <div class="line-or"><div class="text-or">or</div></div>
+                  <div class="clear"></div>
+                  <!-- FORM STARTS HERE -->
+                  <form method="POST" action="" accept-charset="UTF-8"><input name="_token" type="hidden" value="k5dNpcDie87dqH4093X4P3Do2WFmaArP3FsGmom6">
+                  <!-- <form method="POST" action="/login-user" novalidate> -->
+                      <div class="form-group">
+                          <input type="text" class="icon-a icon-a-user form-control" autocomplete="off" id="email"name="email" placeholder="Username/Email">
+                      </div>
+    
+    
+    
+                      <!-- sample input id warning -->
+                      <div class="form-group">
+                          <input type="password" id="password" class="icon-a icon-a-lock form-control" name="password" placeholder="Password">
+                          <div class="forgot">Forgot your <a href="http://webfographics.com/forgot-password">password</a></div>
+                      </div>
+    
+                      <div class="form-group text-title" style="display: none;">
+                          <input type="checkbox" name="remember_me">Remember me
+                      </div>
+    
+                      <input type="text" hidden="hidden" id="os" name="os">
+                      <input type="text" hidden="hidden" id="browser" name="browser">
+    
+                      <!-- sample warning message -->
+                      <div class="top-warning "></div>
+                      <!-- sample warning message -->
+    
+                    <div class="btn-block">
+                      <button type="submit" class="btn btn-danger btn-lg">LOGIN</button>
+                      <span id="pass_hide" hidden="hidden">hide</span>
+                      <div class="member-wrap">
+                          <span>Not a member yet?</span> <a class="login-now" href="http://webfographics.com/register">Sign Up now</a>
+                      </div>
+                    </div>
+              </form>
+            </div>
+            
+        </div>
+		<div class="main-wrap">
+          <header class="mini-header">
+          		<a class="menu glyphicon glyphicon-align-justify" href="#">&nbsp;</a>
+                <a class="logo" href="#">
+                    <img src="img/logo.png" alt="logo" />
+                </a>
+                 <a class="search glyphicon glyphicon-search" href="#">&nbsp;</a>
+          </header>
+          
+       	  <header class="main-header" id="header">
+            	<div class="top clearfix">
+                	<div class="container">
+                    	<ul class="pull-left contact-info">
+                            <li><i class="glyphicon glyphicon-envelope"></i> info@stravel.com</li>
+                            <li><i class="glyphicon glyphicon-phone"></i> +62903244222</li>
+                        </ul>
+                        <ul class="pull-right">
+                            <li class="user">
+                                <a class="btn btn-link" id="login_btn">Login</a>
+                                <a class="btn btn-danger">Register</a>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="dropdown lang">
+                                <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                    <img src="img/indo.png" alt=""/>
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="drop2">
+                                    <li><a href="#"><img src="img/indo.png" alt=""/> Bahasa</a></li>
+                                    <li><a href="#"><img src="img/eng.png" alt=""/> English</a></li>
+                                </ul>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="dropdown money">
+                                <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                    (IDR)Rupiah
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="drop2">
+                                    <li><a href="#">(IDR)Rupiah</a></li>
+                                    <li><a href="#">($)US Dollar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="main-menu">
+                	<div class="container">
+                    	<a href="#" class="cur pull-left">
+                            <span class="text-blue text-big">Flight Ticket</span>
+                            More than <strong class="text-blue">1020</strong> Destination
+                        </a>
+                        <a href="#" class="pull-left">
+                            <span class="text-blue text-big">Traveling Promo</span>
+                            More than <strong class="text-blue">1020</strong> Promo's
+                        </a>
+                        <a class="logo" href="#">
+                            <img src="img/logo.png" alt="logo" />
+                        </a>
+                        <a href="#" class="pull-right">
+                            <span class="text-blue text-big">Help And Support</span>
+                            Duis autem vel eum iriue
+                        </a>
+                        <a href="#" class="pull-right">
+                            <span class="text-blue text-big">News And Article</span>
+                            Lorem Ipsum dolor sit amet
+                        </a>
+                    </div>
+                </div>
+                <span class="glyphicon glyphicon-align-justify">&nbsp;</span>
+            </header>
+        	<!-- InstanceBeginEditable name="yieldyu" -->
+            <div class="container">
+            	<ul class="breadcrumb pull-left">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Promo</a></li>
+                    <li><a href="#">Tour Raja Ampat</a></li>
+                </ul>
+                <div class="pull-right breadcrumb">
+                	<strong class="m-r-10">Share to :</strong>
+                    <a href="#" class="m-r-10"><i class="glyphicon glyphicon-envelope"></i></a>
+                    <a href="#" class="m-r-10"><i class="glyphicon glyphicon-share"></i></a>
+                    <a href="#" class="m-r-10"><i class="glyphicon glyphicon-heart"></i></a>
+                    <a href="#" class="m-r-10"><i class="glyphicon glyphicon-user"></i></a>
+                </div>
+            </div>
+            <section class="promo-head">
+                	<div class="container">
+                    	<div class="row">
+                        	<div class="col-md-4 info p-t-5 p-b-10">
+                                <h5>Bandung <span class="icon icon-arrow"></span> Raja Ampat</h5>
+                                <div class="star-block no-margin">
+                                    <span class="periode">Periode : 1 Aug - 1 Sept</span>
+                                    <span class="icon star"></span>
+                                    <span class="icon star"></span>
+                                    <span class="icon star"></span>
+                                    <span class="icon star"></span>
+                                    <span class="icon star-empty"></span>
+                                </div>
+                            </div>
+                            <aside class="col-sm-4 provider">
+                                <span class="logo">
+                                    <img src="img/vietnam_airlines.png" alt="">
+                                    Ipsum Airlines
+                                </span>
+                                <span class="logo">
+                                    <img src="img/american_airlines.png" alt="">
+                                    Lorem Airlines
+                                </span>
+                            </aside>
+                            <div class="col-sm-2 p-t-20">
+                            	<span class="price full-width">
+                                    from <span class="coret">Rp.400k</span><br>
+                                    <strong>Rp.328k</strong>pp
+                                </span>
+                            </div>
+                            <div class="col-sm-2 p-t-30">
+                            	<a href="#" class="btn btn-info">Get it Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            <div class="container">
+            	<article class="main-arc row">
+                	<div class="col-md-6">
+                    	<div class="slider">
+                        	<div id="slides">
+                              <img src="img/promo1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+                              <img src="img/promo2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+                              <img src="img/promo3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
+                              <img src="img/bunaken.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text">
+                    	<h4 class="text-blue">Deskripsi</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam. </p>
+                        <br />
+                        <h4 class="text-blue">Persyaratan</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim </p>
+                        <br />
+                        <ol>
+                        	<li>Duis autem vel eum iriure dolor</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Ut wisi enim ad minim veniam</li>
+                            <li>Nam liber tempor cum soluta</li>
+                        </ol>
+                    </div>
+                </article>
+                
+                <section class="row step-content">
+                	<div class="col-md-8">
+                       <h3 class="tiles-title no-padding m-l-20"><i class="icon plane-up"></i> Flight  <strong class="text-blue">Depart</strong></h3>
+                       <section class="search-result m-t-10">
+							<div class="list-result no-border">
+                                    <div class="head">
+                                        <div class="col-sm-11">
+                                            Bandung <span class="icon pointer"></span>
+                                            <em>Jakarta</em><span class="icon pointer"></span>
+                                            Medan <em>(10 Hours 20 Minute)</em>
+                                        </div>
+                                    </div>
+                                    <div class="detail row">
+                                        <section class="timeline col-sm-12">
+                                            <ul class="row-5 clearfix">
+                                                <li class="place">
+                                                    <span class="date">Sunday, 19 Jan</span>
+                                                    Bandung
+                                                    <time class="icon-a icon-a-plane-up">18:00</time>
+                                                </li>
+                                                <li class="provider">
+                                                    <span class="duration">5h 10m</span>
+                                                    <img src="img/american_airlines.png">
+                                                    Lorem Airlines<br>QPR 227
+                                                </li>
+                                                <li class="transit">
+                                                    <span class="date">Sunday, 19 Jan</span>
+                                                    <strong>Jakarta</strong>
+                                                    <time class="icon-a plane-up-small">19:00</time>
+                                                    <span class="separator"></span>
+                                                    <time class="icon-a plane-down-small">22:00</time>
+                                                    <span class="duration">30 Minute</span>
+                                                </li>
+                                                <li class="provider">
+                                                    <span class="duration">5h 10m</span>
+                                                    <img src="img/qatar_airlines.png">
+                                                    Qatar Airlines<br>QPR 227
+                                                </li>
+                                                <li class="place">
+                                                    <span class="date">Monday, 20 Jan</span>
+                                                    Bali
+                                                    <time class="icon-a icon-a-plane-down">06:00 <br><br>(+1H)</time>
+                                                </li>
+                                            </ul>
+                                            <ul class="row-5 facility">
+                                                <li>
+                                                    Facility:
+                                                    <img src="img/lunch.png" alt="">
+                                                    <img src="img/bagasi.png" alt="">
+                                                    <img src="img/tax.png" alt="">
+                                                </li>
+                                                <li>
+                                                    Facility:
+                                                    <img src="img/lunch.png" alt="">
+                                                    <img src="img/bagasi.png" alt="">
+                                                    <img src="img/tax.png" alt="">
+                                                </li>
+                                            </ul>
+                                        </section>
+                                </div>
+                            </div>
+                      </section>
+                      
+                      
+                       <h3 class="tiles-title no-padding m-l-20"><i class="icon plane-down"></i> Flight  <strong class="text-blue">Return</strong></h3>
+                       <section class="search-result m-t-10">
+							<div class="list-result no-border">
+                                    <div class="head">
+                                        <div class="col-sm-11">
+                                            Medan <span class="icon pointer"></span>
+                                            <em>Jakarta</em><span class="icon pointer"></span>
+                                            Bandung <em>(10 Hours 20 Minute)</em>
+                                        </div>
+                                    </div>
+                                    <div class="detail row">
+                                        <section class="timeline col-sm-12">
+                                            <ul class="row-5 clearfix">
+                                               <li class="place">
+                                                    <span class="date">Monday, 20 Jan</span>
+                                                    Bali
+                                                    <time class="icon-a icon-a-plane-down">06:00 <br><br>(+1H)</time>
+                                                </li>
+                                                <li class="provider">
+                                                    <span class="duration">5h 10m</span>
+                                                    <img src="img/american_airlines.png">
+                                                    Lorem Airlines<br>QPR 227
+                                                </li>
+                                                <li class="transit">
+                                                    <span class="date">Sunday, 19 Jan</span>
+                                                    <strong>Jakarta</strong>
+                                                    <time class="icon-a plane-up-small">19:00</time>
+                                                    <span class="separator"></span>
+                                                    <time class="icon-a plane-down-small">22:00</time>
+                                                    <span class="duration">30 Minute</span>
+                                                </li>
+                                                <li class="provider">
+                                                    <span class="duration">5h 10m</span>
+                                                    <img src="img/qatar_airlines.png">
+                                                    Qatar Airlines<br>QPR 227
+                                                </li>
+                                                 <li class="place">
+                                                    <span class="date">Sunday, 19 Jan</span>
+                                                    Bandung
+                                                    <time class="icon-a icon-a-plane-up">18:00</time>
+                                                </li>
+                                            </ul>
+                                            <ul class="row-5 facility">
+                                                <li>
+                                                    Facility:
+                                                    <img src="img/lunch.png" alt="">
+                                                    <img src="img/bagasi.png" alt="">
+                                                    <img src="img/tax.png" alt="">
+                                                </li>
+                                                <li>
+                                                    Facility:
+                                                    <img src="img/lunch.png" alt="">
+                                                    <img src="img/bagasi.png" alt="">
+                                                    <img src="img/tax.png" alt="">
+                                                </li>
+                                            </ul>
+                                        </section>
+                                </div>
+                            </div>
+                      </section>
+                    </div>
+                    
+                    
+                    <aside class="col-md-4 m-t-30">                        
+                    	<div class="tiles-white titled">
+                        	<div class="head"><span><i class="icon arrow-down"></i> Price Detail</span></div>
+                            <ul class="price-list">
+                            	<li class="clearfix">Lorem Airlines (Adult) x1	<span class="price">Rp <strong>623.500</strong></span></li>
+                                <li class="clearfix">Bagasi (Adult) CGK-DPS	<span class="price">Rp <strong>0</strong></span></li>
+                                <li class="clearfix">Bagasi (Adult) CGK-DPS	<span class="price">Rp <strong>0</strong></span></li>
+                                <li class="clearfix">Bagasi (Adult) CGK-DPS	<span class="price">Rp <strong>0</strong></span></li>
+                                <li class="clearfix">Bagasi (Adult) CGK-DPS	<span class="price">Rp <strong>20.000</strong></span></li>
+                                <li class="separator"></li>
+                                <li class="total clearfix">Total <span class="price">Rp <strong>643.012</strong></span></li>
+                            </ul>
+                            <p class="alert alert-warning">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh </p>
+                        </div>
+                        
+                        <div class="related-tour no-margin no-padding">
+                        	<h3 class="title full-width" style="margin-top:0; padding-bottom:10px;">Promo <strong class="text-blue"> Terkait </strong></h3>
+                        	<ul>
+                            	<li>
+                                    <section class="row">
+                                        <div class="col-xs-7">
+                                            <h4>
+                                                Eifel Park Tower
+                                                <span>Paris, France</span>
+                                            </h4>
+                                            <figure>
+                                                <img src="img/rel4.jpg" alt="">
+                                            </figure>
+                                        </div>
+                                        <div class="col-xs-5">
+                                            <span class="price">
+                                                from <span class="coret">Rp.400k</span><br>
+                                                <strong>Rp.328k</strong>pp
+                                            </span>
+                                            <div class="star-block">
+                                                <span class="icon star"></span>
+                                                <span class="icon star"></span>
+                                                <span class="icon star"></span>
+                                                <span class="icon star"></span>
+                                                <span class="icon star-empty"></span>
+                                            </div>
+                                            <a href="#" class="btn btn-def">Check Now</a>
+                                            <a href="#" class="btn btn-info">Get it Now</a>
+                                        </div>
+                                    </section>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                </section>
+            </div>
+            
+        	<!-- InstanceEndEditable -->
+        	<footer>
+        	<a href="#header" class="icon icon-flight"></a>
+        	<div class="container">
+            	<span class="icon deco"></span>
+            	<div class="row">
+                	<div class="col-sm-2 text-center">
+                    	<img class="logo" src="img/logo-white.png" alt="logo">
+                    </div>
+                    <div class="col-sm-2">
+                    	<ul>
+                        	<li><strong>Our Menu</strong></li>
+                            <li><a href="#">Press Center</a></li>
+                            <li><a href="#">Travel News</a></li>
+                            <li><a href="#">Best Price Guarantee</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                    	<ul>
+                        	<li><strong>Usefull Link</strong></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Travel News</a></li>
+                            <li><a href="#">Support Center</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                    	<ul>
+                        	<li><strong>Account</strong></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Personal Information</a></li>
+                            <li><a href="#">My Credit Slip</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 subscribe">
+                    	<strong>Subscribe</strong>
+                        <input type="email" placeholder="Your Email Address">
+                        <input type="submit" class="btn btn-info" value="Send">
+                        <div class="socmed">
+                        	Find Us : 
+                            <a href="#"><i class="icon fb"></i></a>
+                            <a href="#"><i class="icon tw"></i></a>
+                            <a href="#"><i class="icon yt"></i></a>
+                            <a href="#"><i class="icon gp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="copyright">copyrights©2015</span>
+        </footer>
+        
+    </div> <!-- /container -->        
+		<script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>	
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>	
+        <script src="js/jquery.slides.min.js"></script>	
+        <script src="js/jquery.colorbox.js"></script>	
+        <script src="js/enquire.min.js"></script>
+        <script src="js/main.js"></script>
+        <!-- InstanceBeginEditable name="js_custom" -->
+        	<script>
+				$(function() {
+				  $('#slides').slidesjs({
+					width: 555,
+					height: 340,
+					navigation: {
+					  effect: "fade"
+					},
+					pagination: false,
+					effect: {
+					  fade: {
+						speed: 400
+					  }
+					}
+				  });
+				});
+            </script>
+		<!-- InstanceEndEditable -->
+    </body>
+<!-- InstanceEnd --></html>

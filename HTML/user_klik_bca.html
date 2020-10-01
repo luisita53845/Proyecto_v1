@@ -1,0 +1,274 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" --> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- InstanceBeginEditable name="doctitle" -->
+        <title>User Profile</title>
+        <!-- InstanceEndEditable -->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="fonts/flaticon.css">
+        <link rel="stylesheet" href="css/mobile.css" />
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <!-- InstanceBeginEditable name="head" -->
+        <!-- InstanceEndEditable -->
+    </head>
+    <body>
+    	<div class="login-popup cb-popup" id="login-block">
+        	
+                <div class="wrap-register">
+    
+                  <h2 class="title"><i class="glyphicon glyphicon-user"></i> LOGIN</h2>
+                  <div class="social-login clearfix">
+                    <a href="#" class="btn-login facebook">CONNECT WITH FACEBOOK</a>
+                    <a href="#" id="signInButton" class="btn-login google">CONNECT WITH GOOGLE +</a>
+                  </div>
+    
+                  <div class="line-or"><div class="text-or">or</div></div>
+                  <div class="clear"></div>
+                  <!-- FORM STARTS HERE -->
+                  <form method="POST" action="" accept-charset="UTF-8"><input name="_token" type="hidden" value="k5dNpcDie87dqH4093X4P3Do2WFmaArP3FsGmom6">
+                  <!-- <form method="POST" action="/login-user" novalidate> -->
+                      <div class="form-group">
+                          <input type="text" class="icon-a icon-a-user form-control" autocomplete="off" id="email"name="email" placeholder="Username/Email">
+                      </div>
+    
+    
+    
+                      <!-- sample input id warning -->
+                      <div class="form-group">
+                          <input type="password" id="password" class="icon-a icon-a-lock form-control" name="password" placeholder="Password">
+                          <div class="forgot">Forgot your <a href="http://webfographics.com/forgot-password">password</a></div>
+                      </div>
+    
+                      <div class="form-group text-title" style="display: none;">
+                          <input type="checkbox" name="remember_me">Remember me
+                      </div>
+    
+                      <input type="text" hidden="hidden" id="os" name="os">
+                      <input type="text" hidden="hidden" id="browser" name="browser">
+    
+                      <!-- sample warning message -->
+                      <div class="top-warning "></div>
+                      <!-- sample warning message -->
+    
+                    <div class="btn-block">
+                      <button type="submit" class="btn btn-danger btn-lg">LOGIN</button>
+                      <span id="pass_hide" hidden="hidden">hide</span>
+                      <div class="member-wrap">
+                          <span>Not a member yet?</span> <a class="login-now" href="http://webfographics.com/register">Sign Up now</a>
+                      </div>
+                    </div>
+              </form>
+            </div>
+            
+        </div>
+		<div class="main-wrap">
+          <header class="mini-header">
+          		<a class="menu glyphicon glyphicon-align-justify" href="#">&nbsp;</a>
+                <a class="logo" href="#">
+                    <img src="img/logo.png" alt="logo" />
+                </a>
+                 <a class="search glyphicon glyphicon-search" href="#">&nbsp;</a>
+          </header>
+          
+       	  <header class="main-header" id="header">
+            	<div class="top clearfix">
+                	<div class="container">
+                    	<ul class="pull-left contact-info">
+                            <li><i class="glyphicon glyphicon-envelope"></i> info@stravel.com</li>
+                            <li><i class="glyphicon glyphicon-phone"></i> +62903244222</li>
+                        </ul>
+                        <ul class="pull-right">
+                            <li class="user">
+                                <a class="btn btn-link" id="login_btn">Login</a>
+                                <a class="btn btn-danger">Register</a>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="dropdown lang">
+                                <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                    <img src="img/indo.png" alt=""/>
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="drop2">
+                                    <li><a href="#"><img src="img/indo.png" alt=""/> Bahasa</a></li>
+                                    <li><a href="#"><img src="img/eng.png" alt=""/> English</a></li>
+                                </ul>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="dropdown money">
+                                <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                    (IDR)Rupiah
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="drop2">
+                                    <li><a href="#">(IDR)Rupiah</a></li>
+                                    <li><a href="#">($)US Dollar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="main-menu">
+                	<div class="container">
+                    	<a href="#" class="cur pull-left">
+                            <span class="text-blue text-big">Flight Ticket</span>
+                            More than <strong class="text-blue">1020</strong> Destination
+                        </a>
+                        <a href="#" class="pull-left">
+                            <span class="text-blue text-big">Traveling Promo</span>
+                            More than <strong class="text-blue">1020</strong> Promo's
+                        </a>
+                        <a class="logo" href="#">
+                            <img src="img/logo.png" alt="logo" />
+                        </a>
+                        <a href="#" class="pull-right">
+                            <span class="text-blue text-big">Help And Support</span>
+                            Duis autem vel eum iriue
+                        </a>
+                        <a href="#" class="pull-right">
+                            <span class="text-blue text-big">News And Article</span>
+                            Lorem Ipsum dolor sit amet
+                        </a>
+                    </div>
+                </div>
+                <span class="glyphicon glyphicon-align-justify">&nbsp;</span>
+            </header>
+        	<!-- InstanceBeginEditable name="yieldyu" -->
+            <div class="container">
+            	<ul class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">User</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+                
+                <section class="row step-content">
+                    <aside class="col-md-3">
+                        <div class="tiles-white titled no-margin">
+                        	<div class="head"><span><i class="icon arrow-down"></i> User Option</span></div>
+                           	<ul class="menu">
+                            	<li><a href="#"><i class="glyphicon glyphicon-user"></i> Profil</a></li>
+                                <li><a href="#"><i class="glyphicon glyphicon-compressed"></i> Riwayat Pembelian</a></li>
+                                <li><a href="#"><i class="glyphicon glyphicon-credit-card"></i> Kartu Kredit</a></li>
+                                <li><a href="#" class="cur"><i class="glyphicon glyphicon-subtitles"></i> E-Banking</a></li>
+                                <li><a href="#"><i class="glyphicon glyphicon-lock"></i>Ganti Password</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                    
+                    <div class="col-md-9">
+                    	<div class="tiles-white row no-margin">
+                            <h3 class="tiles-title"><strong class="text-blue">Klik</strong> BCA</h3>
+                            <div class="alert alert-info m-b-40">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                            </div>
+                            <form action="" class="form-group">
+                                <div class="row">
+                                    <div class="input col-sm-8">
+                                        <label>Name pemegang rekening :</label>
+                                        <input type="text" class="icon-a icon-a-user" value="Ihin Solihin" placeholder="Name Pemegang Rekening">
+                                        <span class="help-block">Lorem ipsum dolor sit amet, consectetuer adipiscing </span>
+                                    </div>
+                                    <div class="img-method col-sm-4 text-center">
+                                       <img src="img/klik_bca.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                     <div class="input col-sm-6">
+                                        <label>E-Banking User ID :</label>
+                                        <input type="text" class="icon-a icon-a-lock" value="Ihin_Ihieuw" placeholder="No Handhone">
+                                        <span class="help-block">Lorem ipsum dolor sit amet, consectetuer adipiscing </span>
+                                    </div>
+                                    <div class="input col-sm-6">
+                                        <label>Name pemegang kartu kredit :</label>
+                                        <input type="text" value="John Doe" class="icon-a icon-a-user" placeholder="Name pemegang kartu kredit">
+                                        <span class="help-block">Lorem ipsum dolor sit amet, consectetuer adipiscing </span>
+                                    </div>
+                                </div>
+                            </form>
+                       </div>
+                    </div>
+                    
+                </section>
+                <section class="col-md-9 col-md-offset-3">
+                	<div class="btn-block bold clearfix">
+                        <div class="m-t-20 text-center">
+                            <button class="btn btn-info">Update Profile</button>    
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+        	<!-- InstanceEndEditable -->
+        	<footer>
+        	<a href="#header" class="icon icon-flight"></a>
+        	<div class="container">
+            	<span class="icon deco"></span>
+            	<div class="row">
+                	<div class="col-sm-2 text-center">
+                    	<img class="logo" src="img/logo-white.png" alt="logo">
+                    </div>
+                    <div class="col-sm-2">
+                    	<ul>
+                        	<li><strong>Our Menu</strong></li>
+                            <li><a href="#">Press Center</a></li>
+                            <li><a href="#">Travel News</a></li>
+                            <li><a href="#">Best Price Guarantee</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                    	<ul>
+                        	<li><strong>Usefull Link</strong></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Travel News</a></li>
+                            <li><a href="#">Support Center</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                    	<ul>
+                        	<li><strong>Account</strong></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Personal Information</a></li>
+                            <li><a href="#">My Credit Slip</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 subscribe">
+                    	<strong>Subscribe</strong>
+                        <input type="email" placeholder="Your Email Address">
+                        <input type="submit" class="btn btn-info" value="Send">
+                        <div class="socmed">
+                        	Find Us : 
+                            <a href="#"><i class="icon fb"></i></a>
+                            <a href="#"><i class="icon tw"></i></a>
+                            <a href="#"><i class="icon yt"></i></a>
+                            <a href="#"><i class="icon gp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="copyright">copyrights©2015</span>
+        </footer>
+        
+    </div> <!-- /container -->        
+		<script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>	
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>	
+        <script src="js/jquery.slides.min.js"></script>	
+        <script src="js/jquery.colorbox.js"></script>	
+        <script src="js/enquire.min.js"></script>
+        <script src="js/main.js"></script>
+        <!-- InstanceBeginEditable name="js_custom" --><!-- InstanceEndEditable -->
+    </body>
+<!-- InstanceEnd --></html>

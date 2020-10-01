@@ -1,0 +1,479 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" --> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- InstanceBeginEditable name="doctitle" -->
+        <title>List Ticket</title>
+        <!-- InstanceEndEditable -->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="fonts/flaticon.css">
+        <link rel="stylesheet" href="css/mobile.css" />
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <!-- InstanceBeginEditable name="head" -->
+        <!-- InstanceEndEditable -->
+    </head>
+    <body>
+    	<div class="login-popup cb-popup" id="login-block">
+        	
+                <div class="wrap-register">
+    
+                  <h2 class="title"><i class="glyphicon glyphicon-user"></i> LOGIN</h2>
+                  <div class="social-login clearfix">
+                    <a href="#" class="btn-login facebook">CONNECT WITH FACEBOOK</a>
+                    <a href="#" id="signInButton" class="btn-login google">CONNECT WITH GOOGLE +</a>
+                  </div>
+    
+                  <div class="line-or"><div class="text-or">or</div></div>
+                  <div class="clear"></div>
+                  <!-- FORM STARTS HERE -->
+                  <form method="POST" action="" accept-charset="UTF-8"><input name="_token" type="hidden" value="k5dNpcDie87dqH4093X4P3Do2WFmaArP3FsGmom6">
+                  <!-- <form method="POST" action="/login-user" novalidate> -->
+                      <div class="form-group">
+                          <input type="text" class="icon-a icon-a-user form-control" autocomplete="off" id="email"name="email" placeholder="Username/Email">
+                      </div>
+    
+    
+    
+                      <!-- sample input id warning -->
+                      <div class="form-group">
+                          <input type="password" id="password" class="icon-a icon-a-lock form-control" name="password" placeholder="Password">
+                          <div class="forgot">Forgot your <a href="http://webfographics.com/forgot-password">password</a></div>
+                      </div>
+    
+                      <div class="form-group text-title" style="display: none;">
+                          <input type="checkbox" name="remember_me">Remember me
+                      </div>
+    
+                      <input type="text" hidden="hidden" id="os" name="os">
+                      <input type="text" hidden="hidden" id="browser" name="browser">
+    
+                      <!-- sample warning message -->
+                      <div class="top-warning "></div>
+                      <!-- sample warning message -->
+    
+                    <div class="btn-block">
+                      <button type="submit" class="btn btn-danger btn-lg">LOGIN</button>
+                      <span id="pass_hide" hidden="hidden">hide</span>
+                      <div class="member-wrap">
+                          <span>Not a member yet?</span> <a class="login-now" href="http://webfographics.com/register">Sign Up now</a>
+                      </div>
+                    </div>
+              </form>
+            </div>
+            
+        </div>
+		<div class="main-wrap">
+          <header class="mini-header">
+          		<a class="menu glyphicon glyphicon-align-justify" href="#">&nbsp;</a>
+                <a class="logo" href="#">
+                    <img src="img/logo.png" alt="logo" />
+                </a>
+                 <a class="search glyphicon glyphicon-search" href="#">&nbsp;</a>
+          </header>
+          
+       	  <header class="main-header" id="header">
+            	<div class="top clearfix">
+                	<div class="container">
+                    	<ul class="pull-left contact-info">
+                            <li><i class="glyphicon glyphicon-envelope"></i> info@stravel.com</li>
+                            <li><i class="glyphicon glyphicon-phone"></i> +62903244222</li>
+                        </ul>
+                        <ul class="pull-right">
+                            <li class="user">
+                                <a class="btn btn-link" id="login_btn">Login</a>
+                                <a class="btn btn-danger">Register</a>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="dropdown lang">
+                                <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                    <img src="img/indo.png" alt=""/>
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="drop2">
+                                    <li><a href="#"><img src="img/indo.png" alt=""/> Bahasa</a></li>
+                                    <li><a href="#"><img src="img/eng.png" alt=""/> English</a></li>
+                                </ul>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="dropdown money">
+                                <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                    (IDR)Rupiah
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="drop2">
+                                    <li><a href="#">(IDR)Rupiah</a></li>
+                                    <li><a href="#">($)US Dollar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="main-menu">
+                	<div class="container">
+                    	<a href="#" class="cur pull-left">
+                            <span class="text-blue text-big">Flight Ticket</span>
+                            More than <strong class="text-blue">1020</strong> Destination
+                        </a>
+                        <a href="#" class="pull-left">
+                            <span class="text-blue text-big">Traveling Promo</span>
+                            More than <strong class="text-blue">1020</strong> Promo's
+                        </a>
+                        <a class="logo" href="#">
+                            <img src="img/logo.png" alt="logo" />
+                        </a>
+                        <a href="#" class="pull-right">
+                            <span class="text-blue text-big">Help And Support</span>
+                            Duis autem vel eum iriue
+                        </a>
+                        <a href="#" class="pull-right">
+                            <span class="text-blue text-big">News And Article</span>
+                            Lorem Ipsum dolor sit amet
+                        </a>
+                    </div>
+                </div>
+                <span class="glyphicon glyphicon-align-justify">&nbsp;</span>
+            </header>
+        	<!-- InstanceBeginEditable name="yieldyu" -->
+            <div class="container">
+            	<ul class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Flight Ticket</a></li>
+                    <li><a href="#">Pemesanan</a></li>
+                </ul>
+                
+                <div class="row">
+                	<div class="step col-md-8">
+                        <ul class="clearfix">
+                            <li class="done">
+                                <span class="tooltip-s">Fill Data</span>
+                                <span class="number">1</span>
+                            </li>
+                            <li class="done">
+                                <span class="tooltip-s">Review</span>
+                                <span class="number">2</span>
+                            </li>
+                            <li class="cur">
+                                <span class="tooltip-s">Payment</span>
+                                <span class="number">3</span>
+                            </li>
+                            <li>
+                                <span class="tooltip-s">E Ticket</span>
+                                <span class="number">4</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <aside class="col-md-4 provider">
+                    	<span class="logo">
+                        	<img src="img/vietnam_airlines.png" alt="" /><br />
+                            Ipsum Airlines
+                        </span>
+                        <span class="logo">
+                        	<img src="img/american_airlines.png" alt="" /><br />
+                            Lorem Airlines
+                        </span>
+                    </aside>
+                </div>
+                
+                <section class="row step-content">
+                	<div class="col-md-8">
+                    	<div class="tiles-white row">
+                            <div class="alert alert-info m-t-30 m-b-40">
+                                <span class="text-big"><strong><i class="glyphicon glyphicon-info-sign text-big"></i>  Lorem ipsum dolor sit amet, consectetuer adipiscing elit</strong> </span>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation 
+                            </div>
+                            <div id="virtualAccountCntr">
+                                <h3>Kode Payment <i>Virtual Account</i>:</h3>
+                                <h3 class="accountNumber">8769010083247614</h3>
+                                <div class="virtualAccountSection">
+                                  <h4 class="vaBcaPrima">
+                                    <span class="arrow open"></span>
+                                    <span class="logo"></span>
+                                    <span class="text">Payment lewat ATM BCA/Jaringan ATM Prima</span>
+                                  </h4>
+                                  <ol class="vaBcaPrimaText" style="display: block;">
+                                    <li>Masukkan PIN Anda.</li>
+                                    <li>Di Menu utama, Pilih <strong>Transaksi Lainnya</strong>.</li>
+                                    <li>Pilih <strong>Transfer</strong>.</li>
+                                    <li>Pilih <strong>Ke Rek Bank Lain</strong>.</li>
+                                    <li>Masukkan kode <strong>013</strong> untuk Bank Permata lalu tekan <strong>Benar</strong>.</li>
+                                    <li>Masukkan jumlah harga Ticket yang akan Anda bayar secara lengkap (tanpa pembulatan). Payment untuk dua atau lebih pesanan harus dilakukan secara terpisah. Setelah itu tekan <strong>Benar</strong>.</li>
+                                    <li>Masukkan <strong>8769010083247614</strong> (16 digit no. <i>virtual account</i> Payment) lalu tekan <strong>Benar</strong>.</li>
+                                    <li>Di halaman konfirmasi transfer akan muncul jumlah yang dibayarkan dan no. rekening tujuan. Jika informasinya telah sesuai tekan <strong>Benar</strong>.</li>
+                                    <li>Transaksi berhasil.</li>
+                                  </ol>
+                                </div>
+                                <div class="virtualAccountSection">
+                                  <h4 class="vaMandiriBersama">
+                                    <span class="arrow open"></span>
+                                    <span class="logo"></span>
+                                    <span class="text">Payment lewat ATM Mandiri/Jaringan ATM Bersama</span>
+                                  </h4>
+                                  <ol class="vaMandiriBersamaText">
+                                    <li>Masukkan PIN Anda.</li>
+                                    <li>Di Menu utama, pilih <strong>Transaksi Lainnya</strong>.</li>
+                                    <li>Pilih <strong>Transfer</strong>.</li>
+                                    <li>Pilih Ke <strong>Rekening Bank Lain ATM Bersama/Link</strong>.</li>
+                                    <li>Masukkan nomor <strong>0138769010083247614</strong> (kode 013 dan 16 digit <i>Virtual account</i>).</li>
+                                    <li>Masukkan jumlah harga Ticket yang akan Anda bayar secara lengkap (tanpa pembulatan). Payment untuk dua atau lebih pesanan harus dilakukan secara terpisah. Setelah itu tekan <strong>Benar</strong>.</li>
+                                    <li>No. referensi dapat dikosongkan, lalu tekan <strong>Benar</strong>.</li>
+                                    <li>Di halaman konfirmasi transfer akan muncul jumlah yang dibayarkan dan no. rekening tujuan. Jika informasinya telah sesuai tekan <strong>Benar</strong>.</li>
+                                    <li>Transaksi Berhasil.</li>
+                                  </ol>
+                                </div>
+                                <div class="virtualAccountSection">
+                                  <h4 class="vaPermata">
+                                    <span class="arrow open"></span>
+                                    <span class="logo"></span>
+                                    <span class="text">Payment lewat ATM Bank Permata</span>
+                                  </h4>
+                                  <ol class="vaPermataText">
+                                    <li>Masukkan PIN Anda.</li>
+                                    <li>Di Menu Utama, pilih <strong>Transaksi Lainnya</strong>.</li>
+                                    <li>Pilih <strong>Transaksi Payment</strong>.</li>
+                                    <li>Pilih <strong>Lain-lain</strong>.</li>
+                                    <li>Pilih <strong>Payment Virtual Account</strong>.</li>
+                                    <li>Masukkan 16 digit no. <i>Virtual Account</i> <strong>8769010083247614</strong>.</li>
+                                    <li>Di halaman konfirmasi transfer akan muncul jumlah yang dibayarkan dan no. rekening tujuan. Jika informasinya telah sesuai tekan <strong>Benar</strong>.</li>
+                                    <li>Pilih rekening Payment Anda dan tekan <strong>Benar</strong>.</li>
+                                  </ol>
+                                </div>
+                                <div class="virtualAccountSection">
+                                  <h4 class="vaAlto">
+                                    <span class="arrow open"></span>
+                                    <span class="logo"></span>
+                                    <span class="text">Payment lewat ATM Alto</span>
+                                  </h4>
+                                  <ol class="vaAltoText">
+                                    <li>Masukkan PIN Anda.</li>
+                                    <li>Di Menu utama, Pilih <strong>Transaksi Lainnya</strong>.</li>
+                                    <li>Pilih <strong>Transfer</strong>.</li>
+                                    <li>Pilih <strong>Ke Rek Bank Lain</strong>.</li>
+                                    <li>Masukkan kode <strong>013</strong> untuk Bank Permata lalu tekan <strong>Benar</strong>.</li>
+                                    <li>Masukkan jumlah harga Ticket yang akan Anda bayar secara lengkap (tanpa pembulatan). Payment untuk dua atau lebih pesanan harus dilakukan secara terpisah. Setelah itu tekan <strong>Benar</strong>.</li>
+                                    <li>Masukkan <strong>0138769010083247614</strong> (kode 013 dan 16 digit no. <i>virtual account</i> Payment) lalu tekan <strong>Benar</strong>.</li>
+                                    <li>Di halaman konfirmasi transfer akan muncul jumlah yang dibayarkan, no. rekening tujuan serta detail Passenger. Jika informasinya telah cocok tekan <strong>Benar</strong>.</li>
+                                    <li>Transaksi berhasil.</li>
+                                  </ol>
+                                </div>
+                              </div>
+                       </div>
+                    </div>
+                    <aside class="col-md-4">
+                    	<div class="tiles-white no-padding">
+                        	<div class="timer">
+                            	Batas waktu pemesanan
+                                <strong>1 Hours 30 Minute</strong>
+                                <span>Monday. 27 Juli 2015 Pukul 18:14</span>
+                            </div>
+                            <h4 class="bold p-l-20 p-r-20 p-b-10">Order Number :		<span class="text-blue m-l-20">2432238094</span></h4>
+                        </div>
+                    
+                    	<div class="tiles-blue-dark">
+                        	<h4><i class="icon info-icon"></i> Important</h4>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                        </div>
+                    
+                    	<div class="tiles-white titled">
+                        	<div class="head"><span><i class="icon arrow-down"></i> Price Detail</span></div>
+                            <ul class="price-list">
+                            	<li class="clearfix">Lorem Airlines (Adult) x1	<span class="price">Rp <strong>623.500</strong></span></li>
+                                <li class="clearfix">Bagasi (Adult) CGK-DPS	<span class="price">Rp <strong>0</strong></span></li>
+                                <li class="clearfix">Bagasi (Adult) CGK-DPS	<span class="price">Rp <strong>0</strong></span></li>
+                                <li class="clearfix">Bagasi (Adult) CGK-DPS	<span class="price">Rp <strong>0</strong></span></li>
+                                <li class="clearfix">Bagasi (Adult) CGK-DPS	<span class="price">Rp <strong>20.000</strong></span></li>
+                                <li class="separator"></li>
+                                <li class="total clearfix">Total <span class="price">Rp <strong>643.012</strong></span></li>
+                            </ul>
+                            <p class="alert alert-warning">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh </p>
+                        </div>
+                        
+                        <div class="tiles-white titled">
+                        	<div class="head"><span><i class="icon arrow-down"></i> Flight Detail</span></div>
+                           	<div class="list-result">
+                            	<div class="detail">
+                                	<section class="timeline">
+                                        <ul class="row-5 clearfix">
+                                            <li class="place">
+                                                Jakarta
+                                                <time class="icon-a icon-a-plane-up">18:00</time>
+                                            </li>
+                                            <li class="provider">
+                                                <span class="duration">5h 10m</span>
+                                                <img src="img/american_airlines.png">
+                                                Lorem Airlines<br>QPR 227
+                                            </li>
+                                            
+                                            
+                                            <li class="place">
+                                                Semarang
+                                                <time class="icon-a icon-a-plane-down">06:00 <br><br>(+1H)</time>
+                                            </li>
+                                        </ul>
+                                        
+                                    </section>
+                                </div>
+                                
+                                <div class="detail">
+                                	<section class="timeline">
+                                        <ul class="row-5 clearfix">
+                                            <li class="place">
+                                                Semarang
+                                                <time class="icon-a icon-a-plane-up">18:00</time>
+                                            </li>
+                                            <li class="provider">
+                                            	<span class="duration">5h 10m</span>
+                                                <img src="img/qatar_airlines.png">
+                                                Lorem Airlines<br>QPR 227
+                                            </li>
+                                            <li class="place">
+                                                Bali
+                                                <time class="icon-a icon-a-plane-down">06:00 <br><br>(+1H)</time>
+                                            </li>
+                                        </ul>
+                                        
+                                    </section>
+                                </div>
+                                
+                              <div class="text-center">
+                                	Total : <span class="label label-danger"> 7 hours 10 Minutes</span>
+                                    <p class="help-block"> All are local time of the airport</p>
+                              </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tiles-white titled">
+                        	<div class="head"><span><i class="icon arrow-down"></i> Passenger</span></div>
+                            <div class="head2 clearfix">
+                                <h4 class="col-xs-9">
+                                    <span class="number-round m-t-10">1</span>
+                                    Ms<br>
+                                    <strong>Jane Doe</strong>
+                                </h4>
+                                <div class="col-xs-3 text-center m-t-10">
+                                    <i class="icon dewasa-icon"></i>
+                                    <span class="text-small">(Adult)</span>
+                                </div>
+                            </div>
+                            <ul class="p-b-20">
+                                <li><label class="col-sm-10">Baggage to Jakarta</label>15 Kg</li>
+                                <li><label class="col-sm-10">Baggage to Jakarta</label>15 Kg</li>
+                            </ul>
+                            <br />
+                            <div class="head2 clearfix">
+                                <h4 class="col-xs-9">
+                                    <span class="number-round m-t-10">1</span>
+                                    Ms<br>
+                                    <strong>Jane Doe</strong>
+                                </h4>
+                                <div class="col-xs-3 text-center m-t-10">
+                                    <i class="icon dewasa-icon"></i>
+                                    <span class="text-small">(Adult)</span>
+                                </div>
+                            </div>
+                            <ul class="p-b-20">
+                                <li><label class="col-sm-10">Baggage to Jakarta</label>15 Kg</li>
+                                <li><label class="col-sm-10">Baggage to Jakarta</label>15 Kg</li>
+                            </ul>
+                            <br />
+                        </div>
+                        
+                    </aside>
+                </section>
+                
+                <section class="col-md-8 no-padding">
+                	 <div class="tiles-white titled no-margin  clearfix row">
+                            <p class="col-sm-9 p-t-10">
+                                Dengan mengklik tombol di samping. Anda menyetujui  <a href="#"> Syarat &amp; Ketentuan </a> dan <a href="#">  Kebijakan Privasi </a> STravel
+                            </p>
+                            <div class="col-sm-3 text-center">
+                            	<br />
+                                <a href="#" class="btn btn-info btn-lg">Bayar</a>
+                            </div>
+                        </div>
+                </section>
+                
+            </div>
+            
+        	<!-- InstanceEndEditable -->
+        	<footer>
+        	<a href="#header" class="icon icon-flight"></a>
+        	<div class="container">
+            	<span class="icon deco"></span>
+            	<div class="row">
+                	<div class="col-sm-2 text-center">
+                    	<img class="logo" src="img/logo-white.png" alt="logo">
+                    </div>
+                    <div class="col-sm-2">
+                    	<ul>
+                        	<li><strong>Our Menu</strong></li>
+                            <li><a href="#">Press Center</a></li>
+                            <li><a href="#">Travel News</a></li>
+                            <li><a href="#">Best Price Guarantee</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                    	<ul>
+                        	<li><strong>Usefull Link</strong></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Travel News</a></li>
+                            <li><a href="#">Support Center</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                    	<ul>
+                        	<li><strong>Account</strong></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Personal Information</a></li>
+                            <li><a href="#">My Credit Slip</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 subscribe">
+                    	<strong>Subscribe</strong>
+                        <input type="email" placeholder="Your Email Address">
+                        <input type="submit" class="btn btn-info" value="Send">
+                        <div class="socmed">
+                        	Find Us : 
+                            <a href="#"><i class="icon fb"></i></a>
+                            <a href="#"><i class="icon tw"></i></a>
+                            <a href="#"><i class="icon yt"></i></a>
+                            <a href="#"><i class="icon gp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="copyright">copyrights©2015</span>
+        </footer>
+        
+    </div> <!-- /container -->        
+		<script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>	
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>	
+        <script src="js/jquery.slides.min.js"></script>	
+        <script src="js/jquery.colorbox.js"></script>	
+        <script src="js/enquire.min.js"></script>
+        <script src="js/main.js"></script>
+        <!-- InstanceBeginEditable name="js_custom" -->
+        <script>
+			$('.nav-pay a').click(function(){
+				$('.nav-pay a').removeClass('btn-info').addClass('btn-def');	
+				$(this).removeClass('btn-def').addClass('btn-info');
+				var target = $(this).attr('href');
+				$('.pay-content > div').hide();
+				$(target).show();
+			});
+        </script>
+		<!-- InstanceEndEditable -->
+    </body>
+<!-- InstanceEnd --></html>

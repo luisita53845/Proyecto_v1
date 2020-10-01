@@ -1,0 +1,1089 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" --> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- InstanceBeginEditable name="doctitle" -->
+        <title>List Ticket</title>
+        <!-- InstanceEndEditable -->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="fonts/flaticon.css">
+        <link rel="stylesheet" href="css/mobile.css" />
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <!-- InstanceBeginEditable name="head" -->
+        <!-- InstanceEndEditable -->
+    </head>
+    <body>
+    	<div class="login-popup cb-popup" id="login-block">
+        	
+                <div class="wrap-register">
+    
+                  <h2 class="title"><i class="glyphicon glyphicon-user"></i> LOGIN</h2>
+                  <div class="social-login clearfix">
+                    <a href="#" class="btn-login facebook">CONNECT WITH FACEBOOK</a>
+                    <a href="#" id="signInButton" class="btn-login google">CONNECT WITH GOOGLE +</a>
+                  </div>
+    
+                  <div class="line-or"><div class="text-or">or</div></div>
+                  <div class="clear"></div>
+                  <!-- FORM STARTS HERE -->
+                  <form method="POST" action="" accept-charset="UTF-8"><input name="_token" type="hidden" value="k5dNpcDie87dqH4093X4P3Do2WFmaArP3FsGmom6">
+                  <!-- <form method="POST" action="/login-user" novalidate> -->
+                      <div class="form-group">
+                          <input type="text" class="icon-a icon-a-user form-control" autocomplete="off" id="email"name="email" placeholder="Username/Email">
+                      </div>
+    
+    
+    
+                      <!-- sample input id warning -->
+                      <div class="form-group">
+                          <input type="password" id="password" class="icon-a icon-a-lock form-control" name="password" placeholder="Password">
+                          <div class="forgot">Forgot your <a href="http://webfographics.com/forgot-password">password</a></div>
+                      </div>
+    
+                      <div class="form-group text-title" style="display: none;">
+                          <input type="checkbox" name="remember_me">Remember me
+                      </div>
+    
+                      <input type="text" hidden="hidden" id="os" name="os">
+                      <input type="text" hidden="hidden" id="browser" name="browser">
+    
+                      <!-- sample warning message -->
+                      <div class="top-warning "></div>
+                      <!-- sample warning message -->
+    
+                    <div class="btn-block">
+                      <button type="submit" class="btn btn-danger btn-lg">LOGIN</button>
+                      <span id="pass_hide" hidden="hidden">hide</span>
+                      <div class="member-wrap">
+                          <span>Not a member yet?</span> <a class="login-now" href="http://webfographics.com/register">Sign Up now</a>
+                      </div>
+                    </div>
+              </form>
+            </div>
+            
+        </div>
+		<div class="main-wrap">
+          <header class="mini-header">
+          		<a class="menu glyphicon glyphicon-align-justify" href="#">&nbsp;</a>
+                <a class="logo" href="#">
+                    <img src="img/logo.png" alt="logo" />
+                </a>
+                 <a class="search glyphicon glyphicon-search" href="#">&nbsp;</a>
+          </header>
+          
+       	  <header class="main-header" id="header">
+            	<div class="top clearfix">
+                	<div class="container">
+                    	<ul class="pull-left contact-info">
+                            <li><i class="glyphicon glyphicon-envelope"></i> info@stravel.com</li>
+                            <li><i class="glyphicon glyphicon-phone"></i> +62903244222</li>
+                        </ul>
+                        <ul class="pull-right">
+                            <li class="user">
+                                <a class="btn btn-link" id="login_btn">Login</a>
+                                <a class="btn btn-danger">Register</a>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="dropdown lang">
+                                <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                    <img src="img/indo.png" alt=""/>
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="drop2">
+                                    <li><a href="#"><img src="img/indo.png" alt=""/> Bahasa</a></li>
+                                    <li><a href="#"><img src="img/eng.png" alt=""/> English</a></li>
+                                </ul>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="dropdown money">
+                                <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                    (IDR)Rupiah
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="drop2">
+                                    <li><a href="#">(IDR)Rupiah</a></li>
+                                    <li><a href="#">($)US Dollar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="main-menu">
+                	<div class="container">
+                    	<a href="#" class="cur pull-left">
+                            <span class="text-blue text-big">Flight Ticket</span>
+                            More than <strong class="text-blue">1020</strong> Destination
+                        </a>
+                        <a href="#" class="pull-left">
+                            <span class="text-blue text-big">Traveling Promo</span>
+                            More than <strong class="text-blue">1020</strong> Promo's
+                        </a>
+                        <a class="logo" href="#">
+                            <img src="img/logo.png" alt="logo" />
+                        </a>
+                        <a href="#" class="pull-right">
+                            <span class="text-blue text-big">Help And Support</span>
+                            Duis autem vel eum iriue
+                        </a>
+                        <a href="#" class="pull-right">
+                            <span class="text-blue text-big">News And Article</span>
+                            Lorem Ipsum dolor sit amet
+                        </a>
+                    </div>
+                </div>
+                <span class="glyphicon glyphicon-align-justify">&nbsp;</span>
+            </header>
+        	<!-- InstanceBeginEditable name="yieldyu" -->
+            <div class="container">
+            	<ul class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Flight Ticket</a></li>
+                </ul>
+                
+                <section class="banner">
+                    <div class="search list">
+                        <div class="container">
+                            <div class="form-group row no-margin">
+                                <div class="input col-sm-2">
+                                    <label>From :</label>
+                                    <input type="text" class="icon-a icon-a-plane-up autocomplete" placeholder="Country or City"/>
+                                </div>
+                                <div class="input col-sm-2">
+                                    <label>To :</label>
+                                    <input type="text" class="icon-a icon-a-plane-down autocomplete" placeholder="Country or City"/>
+                                </div>
+                                <div class="input col-sm-2">
+                                    <label>Depart :</label>
+                                    <input type="text" class="icon-a icon-a-calendar datepicker" placeholder="dd/mm/yyyy"/>
+                                </div>
+                                <div class="input col-sm-2">
+                                    <label class="checkbox checked"><input type="checkbox" checked/> Return :</label>
+                                    <input type="text" class="icon-a icon-a-calendar datepicker" placeholder="dd/mm/yyyy"/>
+                                </div>
+                                <div class="input col-sm-2 passenger">
+                                    <label>For :</label>
+                                    <div class="col-xs-4">
+                                        <input type="number" value="0"/>
+                                        Adult
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <input type="number" value="0"/>
+                                        Children
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <input type="number" value="0"/>
+                                        Infant
+                                    </div>
+                                </div>
+                               <div class="col-sm-2 submit no-padding text-center">
+                                    <button class="btn btn-info full-width">Search Ticket</button>
+                                    <br><br>
+                                    <a href="#" class="text-pink" onclick="$('.overview').slideToggle('slow')"><i class="glyphicon glyphicon-search"></i> More Option</a>
+                                </div>
+                            </div>
+                       </div>
+                  </div>
+                </section>
+                
+                <section class="tab-pp clearfix">
+                	<ul>
+                    	<li class="cur clearfix">
+                            <span class="number">1</span>
+                            <div class="provide">
+                                <strong>Depart</strong>
+                                <img src="img/qatar_airlines.png" alt="" /> <em>Lorem Airlines</em>
+                            </div>
+                            <div class="route">
+                                <div class="from-to">
+                                    <strong>Bandung</strong>
+                                    18:15
+                                </div>
+                                <span class="icon pointer-blue pull-left"></span>
+                                <div class="from-to">
+                                    <strong>Bandung</strong>
+                                    18:15
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="detail">
+                                <span>
+                                    <label>Duration</label>: 5Hours 30Minute (1x Transit)
+                                </span>
+                                <span>
+                                    <label>Price</label>: <span class="coret">Rp. 543.000</span> <strong>Rp. 443.<em>000</em> </strong>
+                                </span>
+                                <span class="help-block">(Including Airline Fee, IWJR, dan PPN)</span>
+                            </div>
+                            <a href="#" class="icon icon-arrow-up-pp" data-toggle="tooltip" data-placement="top" data-title="Detail">&nbsp;</a>
+                        </li>
+                        <li class="clearfix">
+                            <span class="number">2</span>
+                            <div class="provide">
+                                <strong>Return</strong>
+                                <img src="img/american_airlines.png" alt="" /> <em>Amet Airlines</em>
+                            </div>
+                            <div class="route">
+                                <div class="from-to">
+                                    <strong>Bandung</strong>
+                                    18:15
+                                </div>
+                                <span class="icon pointer-blue pull-left"></span>
+                                <div class="from-to">
+                                    <strong>Bandung</strong>
+                                    18:15
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="detail">
+                                <span>
+                                    <label>Duration</label>: 5Hours 30Minute (1x Transit)
+                                </span>
+                                <span>
+                                    <label>Price</label>: <span class="coret">Rp. 543.000</span> <strong>Rp. 443.<em>000</em> </strong>
+                                </span>
+                                <span class="help-block">(Including Airline Fee, IWJR, dan PPN)</span>
+                            </div>
+                            <a href="#" class="icon icon-arrow-up-pp" data-toggle="tooltip" data-placement="top" data-title="Detail">&nbsp;</a>
+                        </li>
+                        <li class="btn-block">
+                        	<button class="btn btn-danger full-width">Book Ticket</button>
+                        </li>
+                    </ul>
+                </section>
+                
+                <div class="clear"></div>
+                <section class="overview" style="display:none">
+                <div class="tab-panel">
+                        <ul class="clearfix">
+                            <li><a href="javascript:void(0)" data-href="#info" class="cur"><i class="glyphicon glyphicon-check"></i> Overview</a></li>
+                            <li><a href="javascript:void(0)" data-href="#stop"><i class="glyphicon glyphicon-arrow-down"></i> Landing</a></li>
+                          	<li><a href="javascript:void(0)" data-href="#maskapai"><i class="glyphicon glyphicon-plane"></i> Airlines</a></li>
+                            <li><a href="javascript:void(0)" data-href="#time"><i class="glyphicon glyphicon-time"></i> Time</a></li>
+                            <li><a href="javascript:void(0)" data-href="#price"><i class="glyphicon glyphicon-tag"></i> Price</a></li>
+                            <li><a href="javascript:void(0)" data-href="#date"><i class="glyphicon glyphicon-calendar"></i> Date</a></li>
+                        </ul>
+                    </div>
+                    <div class="panel row no-border no-bg" id="info">
+                        <div class="col-sm-3">
+                        	<div class="item">
+                            	<i class="glyphicon glyphicon-search"></i>
+                                <p>
+                                    Found<br />
+                                    <strong>640</strong><em>Flight Route</em>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                        	<div class="item">
+                                <i class="glyphicon glyphicon-tag"></i>
+                                <p>
+                                    Cheapest<br />
+                                    <strong>Rp 560<em>k</em></strong><em>/ 23 h 10 m</em>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                        	<div class="item">
+                                <i class="glyphicon glyphicon-time"></i>
+                                <p>
+                                    Fastest<br />
+                                    <strong>Rp 560<em>k</em></strong><em>/ 23 h 10 m</em>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                        	<div class="item">
+                                <i class="glyphicon glyphicon-thumbs-up"></i>
+                                <p>
+                                    Most Recomended<br />
+                                    <strong>Rp 560<em>k</em></strong><em>/ 23 h 10 m</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel row boxed" id="stop" style="display:none">
+            
+                        <div class="col-sm-6 p-l-30">
+                        	<h3 class="no-padding">Jumlah Transit</h3>
+                            <label class="checkbox bordered"><input type="checkbox" /> Langsung</label>
+                            <label class="checkbox bordered"><input type="checkbox" /> 1x Transit</label>
+                            <label class="checkbox bordered"><input type="checkbox" /> 2x Transit</label>
+                            <label class="checkbox bordered"><input type="checkbox" /> Tampilkan transit tanpa bermalam</label>
+                        </div>
+                        <div class="col-sm-6 p-l-30">
+                        	<h3 class="no-padding">Kota Transit</h3>
+                            <label class="checkbox bordered"><input type="checkbox" /> Jakarta</label>
+                            <label class="checkbox bordered"><input type="checkbox" /> Bandung</label>
+                            <label class="checkbox bordered"><input type="checkbox" /> Surabaya</label>
+                            <label class="checkbox bordered"><input type="checkbox" /> Bali</label>
+                        </div>
+                    </div>
+                    
+                     <div class="panel row boxed" id="maskapai" style="display:none">
+                        <div class="col-sm-12 p-l-30">
+                        	<h3 class="no-padding">Maskapai</h3>
+  							
+                            <div class="row">
+                            	<div class="col-sm-3">
+                                	<label class="checkbox bordered"><input type="checkbox" /> <img class="mas" src="img/american_airlines.png" /> Lorem Airlines</label>
+                                </div>
+                                <div class="col-sm-3">
+									<label class="checkbox bordered"><input type="checkbox" /> <img class="mas" src="img/qatar_airlines.png" /> Qatar Airlines</label>                                	
+                                </div>
+                                <div class="col-sm-3">
+                                	<label class="checkbox bordered"><input type="checkbox" /> <img class="mas" src="img/vietnam_airlines.png" /> Ipsum Airlines</label>	
+                                </div>
+                                <div class="col-sm-3">
+                                	<label class="checkbox bordered"><input type="checkbox" /> <img class="mas" src="img/american_airlines.png" /> Lorem Airlines</label>	
+                                </div> 
+                            </div>
+                            
+                            
+                             <div class="row">
+                            	<div class="col-sm-3">
+                                	<label class="checkbox bordered"><input type="checkbox" /> <img class="mas" src="img/vietnam_airlines.png" /> Ipsum Airlines</label>	
+                                </div>
+                                <div class="col-sm-3">
+									<label class="checkbox bordered"><input type="checkbox" /> <img class="mas" src="img/qatar_airlines.png" /> Qatar Airlines</label>                                	
+                                </div>
+                                <div class="col-sm-3">
+                                	<label class="checkbox bordered"><input type="checkbox" /> <img class="mas" src="img/american_airlines.png" /> Lorem Airlines</label>	
+                                </div> 
+                                <div class="col-sm-3">
+                                	<label class="checkbox bordered"><input type="checkbox" /> <img class="mas" src="img/american_airlines.png" /> Lorem Airlines</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel row boxed" id="time" style="display:none">
+                        <div class="col-sm-3 p-l-30">
+                        	<h3 class="no-padding">Pagi</h3>
+                            <label class="checkbox bordered"><input type="checkbox" /> 04:00 - 11:00</label>
+                        </div>
+                        <div class="col-sm-3 p-l-30">
+                        	<h3 class="no-padding">Siang</h3>
+                            <label class="checkbox bordered"><input type="checkbox" /> 11:00 - 15:00</label>
+                        </div>
+                        <div class="col-sm-3 p-l-30">
+                        	<h3 class="no-padding">Sore</h3>
+                            <label class="checkbox bordered"><input type="checkbox" /> 15:00 - 18:30</label>
+                        </div>
+                        <div class="col-sm-3 p-l-30">
+                        	<h3 class="no-padding">Malam</h3>
+                            <label class="checkbox bordered"><input type="checkbox" /> 18:30 - 11:00</label>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel row boxed" id="price" style="display:none">
+                        <div class="col-sm-12 p-l-30 p-r-30">
+                        	<h3 class="no-padding">Harga</h3>
+                            <div class="nstSlider" data-range_min="0" data-range_max="2500" data-cur_min="100" data-cur_max="800">
+                                <div class="bar"></div>
+                                <div class="leftGrip"></div>
+                                <div class="rightGrip"></div>
+                            </div>
+                            <div class="leftLabel"></div>
+                            <div class="rightLabel"></div>
+                        </div>
+                    </div>
+                    
+                     <div class="panel row boxed" id="date" style="display:none">
+                        <div class="col-sm-2 p-l-30 text-center">
+                        	<h3 class="no-padding">Min, 6 Sep</h3>
+                            <strong>-</strong>
+                        </div>
+                        <div class="col-sm-2 p-l-30 text-center">
+                        	<h3 class="no-padding">Sen, 7 Sep</h3>
+                            <label class="radio bordered"><input type="radio" name="time" />
+                            	<div class="headPrice text-blue">
+                                    <span class="priceSymbol">Rp</span>
+                                    <span class="priceMain"> 1.189</span>
+                                    <span class="priceTail">.600</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="col-sm-2 p-l-30 text-center">
+                        	<h3 class="no-padding">Sel, 8 Sep</h3>
+                            <label class="radio bordered"><input type="radio" name="time" />
+                            	<div class="headPrice text-blue">
+                                    <span class="priceSymbol">Rp</span>
+                                    <span class="priceMain"> 1.189</span>
+                                    <span class="priceTail">.600</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="col-sm-2 p-l-30 text-center">
+                        	<h3 class="no-padding">Rab, 9 Sep</h3>
+                            <label class="radio bordered"><input type="radio" name="time" />
+                            	<div class="headPrice text-blue">
+                                    <span class="priceSymbol">Rp</span>
+                                    <span class="priceMain"> 1.189</span>
+                                    <span class="priceTail">.600</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="col-sm-2 p-l-30 text-center">
+                        	<h3 class="no-padding">Kam, 10 Sep</h3>
+                            <label class="radio bordered"><input type="radio" name="time" />
+                            	<div class="headPrice text-blue">
+                                    <span class="priceSymbol">Rp</span>
+                                    <span class="priceMain"> 1.189</span>
+                                    <span class="priceTail">.600</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="col-sm-2 p-l-30 text-center">
+                        	<div class="no-padding text-blue">
+                            	<h4><a href="javascript:void(0)"><i class="glyphicon glyphicon-calendar"></i><br />Pilih Tanggal Lain</a></h4>
+                                <div id="datepicker" class="shadow-date" data-date="12/03/2012"></div>
+								<input type="hidden" id="my_hidden_input" />
+                            </div>
+                        </div>
+                    </div>
+                    
+                  </section>
+                  <div class="clear"></div>
+                  <section class="search-result">
+                        <div class="list-result col">
+                            <div class="head">
+                            	<div class="col-sm-11">
+                                    Bandung <span class="icon pointer"></span>
+                                    <em>Jakarta</em><span class="icon pointer"></span>
+                                    Medan <em>(10 h 20 m)</em>
+                                </div>
+                            </div>
+                            <div class="detail row">
+                                <section class="timeline col-sm-8">
+                                    <ul class="row-5 clearfix">
+                                        <li class="place">
+                                            <span class="date">Sunday, 19 Jan</span>
+                                            Bandung
+                                            <time class="icon-a icon-a-plane-up">18:00</time>
+                                        </li>
+                                        <li class="provider">
+                                            <span class="duration">5 h 10 m</span>
+                                            <img src="img/vietnam_airlines.png" />
+                                            Amet Airlines<br />QPR 227
+                                        </li>
+                                        <li class="transit">
+                                        	<span class="date">Sunday, 19 Jan</span>
+                                            <strong>Jakarta</strong>
+                                            <time class="icon-a plane-up-small">19:00</time>
+                                            <span class="separator"></span>
+                                            <time class="icon-a plane-down-small">22:00</time>
+                                            <span class="duration">30 m</span>
+                                        </li>
+                                        <li class="provider">
+                                            <span class="duration">5 h 10 m</span>
+                                            <img src="img/qatar_airlines.png" />
+                                            Lorem Airlines<br />QPR 227
+                                        </li>
+                                        <li class="place">
+                                            <span class="date">Monday, 20 Jan</span>
+                                            Bali
+                                            <time class="icon-a icon-a-plane-down">06:00 <br /><br />(+1H)</time>
+                                        </li>
+                                    </ul>
+                                    <ul class="row-5 facility">
+                                        <li>
+                                            Facility:
+                                            <img src="img/lunch.png" alt="" />
+                                            <img src="img/bagasi.png" alt="" />
+                                            <img src="img/tax.png" alt="" />
+                                        </li>
+                                        <li>
+                                            Facility:
+                                            <img src="img/lunch.png" alt="" />
+                                            <img src="img/bagasi.png" alt="" />
+                                            <img src="img/tax.png" alt="" />
+                                        </li>
+                                    </ul>
+                                </section>
+                                <aside class="price col-sm-4">
+                                	<div class="row">
+                                    	<div class="col-xs-5">
+                                        	<span class="coret">Rp. 992k</span>
+                                            Rp. 702k
+                                            <button class="btn btn-info">Book</button>
+                                        </div>
+                                        
+                                    	<div class="col-xs-7 third-party">
+                                        	<strong>Book Via:</strong>
+                                            <a class="clearfix" href="#">
+                                                <img src="img/traveloka-logo.png" alt="traveloka" />
+                                                <span class="btn btn-sm btn-danger">Rp. 900k</span>
+                                            </a>
+
+                                            <a class="clearfix" href="#">
+                                                <img src="img/tiketcom.png" alt="Ticket" />
+                                                <span class="btn btn-sm btn-danger">Rp. 920k</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="#"><i class="glyphicon glyphicon-info-sign"></i> Learn how to save</a>
+                                </aside>
+                        </div>
+                        <a href="javscript:void(0)" class="icon icon-tiket-detail" data-toggle="tooltip" data-placement="top" data-title="Show Detail">&nbsp;</a>
+                    </div>
+                    
+                    
+                    <div class="list-result col">
+                            <div class="head">
+                                <div class="col-sm-11">
+                                    Bandung 
+                                    <span class="icon pointer"></span>
+                                    <em>Jakarta</em>
+                                    <span class="icon pointer"></span>
+                                    <em>Tokyo</em>
+                                    <span class="icon pointer"></span>
+                                    <em>Hawai</em>
+                                    <span class="icon pointer"></span>
+                                    Rio de Jeneiro <em>(10 h 20 m)</em>
+                                </div>
+                            </div>
+                            <div class="detail row">
+                                <section class="timeline col-sm-8">
+                                	<ul class="row-5 clearfix multi-transit no-margin overview">
+                                        <li class="place">
+                                            <span class="date">Sunday, 19 Jan</span>
+                                            Bandung
+                                            <time class="icon-a icon-a-plane-up">18:00</time>
+                                        </li>
+                                        <li class="transit summary">
+                                        	<div><span class="text-blue">3x TRANSIT:</span>  Jakarta, Palembang, dan Bengkulu</div>
+                                            <a href="javascript:void(0)">Tampilkan Timeline</a>
+                                        </li>
+                                        <li class="place">
+                                            <span class="date">Monday, 20 Jan</span>
+                                            Medan
+                                            <time class="icon-a icon-a-plane-down">06:00 <br /><br />(+1H)</time>
+                                        </li>
+                                    </ul>
+                                
+                                	<a class="next-route">&rsaquo;</a>
+                                    <a class="prev-route">&lsaquo;</a>
+                                    <div class="row-5 clearfix multi-transit slider">
+                                        <div class="place item">
+                                            <span class="date">Sunday, 19 Jan</span>
+                                            1.Bandung
+                                            <time class="icon-a icon-a-plane-up">18:00</time>
+                                        </div>
+                                        <div class="provider item">
+                                            <span class="duration">5 h 10 m</span>
+                                            <img src="img/american_airlines.png" />
+                                            Amet Airlines<br />QPR 227
+                                            <div class="facility">
+                                                <img src="img/lunch.png" alt="" />
+                                                <img src="img/bagasi.png" alt="" />
+                                                <img src="img/tax.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="transit item">
+                                        	<span class="date">Sunday, 19 Jan</span>
+                                            <strong>2.Jakarta</strong>
+                                            <time class="icon-a plane-down-small">19:00</time>
+                                            <span class="separator"></span>
+                                            <time class="icon-a plane-up-small">22:00</time>
+                                            <span class="duration">30 m</span>
+                                        </div>
+                                        <div class="provider item">
+                                            <span class="duration">5 h 10 m</span>
+                                            <img src="img/american_airlines.png" />
+                                            Amet Airlines<br />QPR 227
+                                            <div class="facility">
+                                                <img src="img/lunch.png" alt="" />
+                                                <img src="img/bagasi.png" alt="" />
+                                                <img src="img/tax.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="transit item">
+                                        	<span class="date">Sunday, 19 Jan</span>
+                                            <strong>3.Tokyo</strong>
+                                            <time class="icon-a plane-down-small">19:00</time>
+                                            <span class="separator"></span>
+                                            <time class="icon-a plane-up-small">22:00</time>
+                                            <span class="duration">30 m</span>
+                                        </div>
+                                        <div class="provider item">
+                                            <span class="duration">5 h 10 m</span>
+                                            <img src="img/american_airlines.png" />
+                                            Amet Airlines<br />QPR 227
+                                             <div class="facility">
+                                                <img src="img/lunch.png" alt="" />
+                                                <img src="img/bagasi.png" alt="" />
+                                                <img src="img/tax.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="transit item">
+                                        	<span class="date">Sunday, 19 Jan</span>
+                                            <strong>4.Hawai</strong>
+                                            <time class="icon-a plane-down-small">19:00</time>
+                                            <span class="separator"></span>
+                                            <time class="icon-a plane-up-small">22:00</time>
+                                            <span class="duration">30 m</span>
+                                        </div>
+                                        <div class="provider item">
+                                            <span class="duration">5 h 10 m</span>
+                                            <img src="img/qatar_airlines.png" />
+                                            Lorem Airlines<br />QPR 227
+                                             <div class="facility">
+                                                <img src="img/lunch.png" alt="" />
+                                                <img src="img/bagasi.png" alt="" />
+                                                <img src="img/tax.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="place item">
+                                            <span class="date">Monday, 20 Jan</span>
+                                            5.Rio de Jeneiro
+                                            <time class="icon-a icon-a-plane-down">06:00 <br /><br />(+1H)</time>
+                                        </div>
+                                    </div>
+                                </section>
+                                <aside class="price col-sm-4">
+                                	<div class="row">
+                                    	<div class="col-xs-5">
+                                        	<span class="coret">Rp. 992k</span>
+                                            Rp. 702k
+                                            <button class="btn btn-info">Book</button>
+                                        </div>
+                                        
+                                    	<div class="col-xs-7 third-party">
+                                        	<strong>Book Via:</strong>
+                                            <a class="clearfix" href="#">
+                                                <img src="img/tiketcom.png" alt="tiket" />
+                                                <span class="btn btn-sm btn-danger">Rp. 920k</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="#"><i class="glyphicon glyphicon-info-sign"></i> Learn how to save</a>
+                                </aside>
+                        </div>
+                        <a href="javscript:void(0)" class="icon icon-tiket-detail" data-toggle="tooltip" data-placement="top" data-title="Show Detail">&nbsp;</a>
+                    </div>
+                    
+                    <div class="list-result col">
+                            <div class="head">
+                                <div class="col-sm-11">
+                                    Bandung 
+                                    <span class="icon pointer"></span>
+                                    <em>Jakarta</em>
+                                    <span class="icon pointer"></span>
+                                    <em>Tokyo</em>
+                                    <span class="icon pointer"></span>
+                                    <em>Hawai</em>
+                                    <span class="icon pointer"></span>
+                                    Rio de Jeneiro <em>(10 h 20 m)</em>
+                                </div>
+                            </div>
+                            <div class="detail row">
+                                <section class="timeline col-sm-8">
+                                	<ul class="row-5 clearfix multi-transit no-margin overview">
+                                        <li class="place">
+                                            <span class="date">Sunday, 19 Jan</span>
+                                            Bandung
+                                            <time class="icon-a icon-a-plane-up">18:00</time>
+                                        </li>
+                                        <li class="transit summary">
+                                        	<div><span class="text-blue">3x TRANSIT:</span>  Jakarta, Palembang, dan Bengkulu</div>
+                                            <a href="javascript:void(0)">Tampilkan Timeline</a>
+                                        </li>
+                                        <li class="place">
+                                            <span class="date">Monday, 20 Jan</span>
+                                            Medan
+                                            <time class="icon-a icon-a-plane-down">06:00 <br /><br />(+1H)</time>
+                                        </li>
+                                    </ul>
+                                
+                                	<a class="next-route">&rsaquo;</a>
+                                    <a class="prev-route">&lsaquo;</a>
+                                    <div class="row-5 clearfix multi-transit slider">
+                                        <div class="place item">
+                                            <span class="date">Sunday, 19 Jan</span>
+                                            1.Bandung
+                                            <time class="icon-a icon-a-plane-up">18:00</time>
+                                        </div>
+                                        <div class="provider item">
+                                            <span class="duration">5 h 10 m</span>
+                                            <img src="img/american_airlines.png" />
+                                            Amet Airlines<br />QPR 227
+                                            <div class="facility">
+                                                <img src="img/lunch.png" alt="" />
+                                                <img src="img/bagasi.png" alt="" />
+                                                <img src="img/tax.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="transit item">
+                                        	<span class="date">Sunday, 19 Jan</span>
+                                            <strong>2.Jakarta</strong>
+                                            <time class="icon-a plane-down-small">19:00</time>
+                                            <span class="separator"></span>
+                                            <time class="icon-a plane-up-small">22:00</time>
+                                            <span class="duration">30 m</span>
+                                        </div>
+                                        <div class="provider item">
+                                            <span class="duration">5 h 10 m</span>
+                                            <img src="img/american_airlines.png" />
+                                            Amet Airlines<br />QPR 227
+                                            <div class="facility">
+                                                <img src="img/lunch.png" alt="" />
+                                                <img src="img/bagasi.png" alt="" />
+                                                <img src="img/tax.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="transit item">
+                                        	<span class="date">Sunday, 19 Jan</span>
+                                            <strong>3.Tokyo</strong>
+                                            <time class="icon-a plane-down-small">19:00</time>
+                                            <span class="separator"></span>
+                                            <time class="icon-a plane-up-small">22:00</time>
+                                            <span class="duration">30 m</span>
+                                        </div>
+                                        <div class="provider item">
+                                            <span class="duration">5 h 10 m</span>
+                                            <img src="img/american_airlines.png" />
+                                            Amet Airlines<br />QPR 227
+                                             <div class="facility">
+                                                <img src="img/lunch.png" alt="" />
+                                                <img src="img/bagasi.png" alt="" />
+                                                <img src="img/tax.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="transit item">
+                                        	<span class="date">Sunday, 19 Jan</span>
+                                            <strong>4.Hawai</strong>
+                                            <time class="icon-a plane-down-small">19:00</time>
+                                            <span class="separator"></span>
+                                            <time class="icon-a plane-up-small">22:00</time>
+                                            <span class="duration">30 m</span>
+                                        </div>
+                                        <div class="provider item">
+                                            <span class="duration">5 h 10 m</span>
+                                            <img src="img/qatar_airlines.png" />
+                                            Lorem Airlines<br />QPR 227
+                                             <div class="facility">
+                                                <img src="img/lunch.png" alt="" />
+                                                <img src="img/bagasi.png" alt="" />
+                                                <img src="img/tax.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="place item">
+                                            <span class="date">Monday, 20 Jan</span>
+                                            5.Rio de Jeneiro
+                                            <time class="icon-a icon-a-plane-down">06:00 <br /><br />(+1H)</time>
+                                        </div>
+                                    </div>
+                                </section>
+                                <aside class="price col-sm-4">
+                                	<div class="row">
+                                    	<div class="col-xs-5">
+                                        	<span class="coret">Rp. 992k</span>
+                                            Rp. 702k
+                                            <button class="btn btn-info">Book</button>
+                                        </div>
+                                        
+                                    	<div class="col-xs-7 third-party">
+                                        	<strong>Book Via:</strong>
+                                            <a class="clearfix" href="#">
+                                                <img src="img/traveloka-logo.png" alt="traveloka" />
+                                                <span class="btn btn-sm btn-danger">Rp. 900k</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="#"><i class="glyphicon glyphicon-info-sign"></i> Learn how to save</a>
+                                </aside>
+                        </div>
+                        <a href="javscript:void(0)" class="icon icon-tiket-detail" data-toggle="tooltip" data-placement="top" data-title="Show Detail">&nbsp;</a>
+                    </div>
+                    
+                    <div class="list-result col">
+                            <div class="head">
+                                <div class="col-sm-11">
+                                    Bandung <span class="icon pointer"></span>
+                                    <em>Jakarta</em><span class="icon pointer"></span>
+                                    Medan <em>(10 h 20 m)</em>
+                                </div>
+                            </div>
+                            <div class="detail row">
+                                <section class="timeline col-sm-8">
+                                    <ul class="row-5 clearfix">
+                                        <li class="place">
+                                            <span class="date">Sunday, 19 Jan</span>
+                                            Bandung
+                                            <time class="icon-a icon-a-plane-up">18:00</time>
+                                        </li>
+                                        <li class="provider">
+                                            <span class="duration">5 h 10 m</span>
+                                            <img src="img/american_airlines.png" />
+                                            Amet Airlines<br />QPR 227
+                                        </li>
+                                        <li class="transit">
+                                        	<span class="date">Sunday, 19 Jan</span>
+                                            <strong>Jakarta</strong>
+                                            <time class="icon-a plane-up-small">19:00</time>
+                                            <span class="separator"></span>
+                                            <time class="icon-a plane-down-small">22:00</time>
+                                            <span class="duration">30 m</span>
+                                        </li>
+                                        <li class="provider">
+                                            <span class="duration">5 h 10 m</span>
+                                            <img src="img/Ipsum_airlines.png" />
+                                            Ipsum Airlines<br />QPR 227
+                                        </li>
+                                        <li class="place">
+                                            <span class="date">Monday, 20 Jan</span>
+                                            Bali
+                                            <time class="icon-a icon-a-plane-down">06:00 <br /><br />(+1H)</time>
+                                        </li>
+                                    </ul>
+                                    <ul class="row-5 facility">
+                                        <li>
+                                            Facility:
+                                            <img src="img/lunch.png" alt="" />
+                                            <img src="img/bagasi.png" alt="" />
+                                            <img src="img/tax.png" alt="" />
+                                        </li>
+                                        <li>
+                                            Facility:
+                                            <img src="img/lunch.png" alt="" />
+                                            <img src="img/bagasi.png" alt="" />
+                                            <img src="img/tax.png" alt="" />
+                                        </li>
+                                    </ul>
+                                </section>
+                                <aside class="price col-sm-4">
+                                	<div class="row">
+                                    	<div class="col-xs-5">
+                                        	<span class="coret">Rp. 992k</span>
+                                            Rp. 702k
+                                            <button class="btn btn-info">Book</button>
+                                        </div>
+                                        
+                                    	<div class="col-xs-7 third-party">
+                                        	<strong>Book Via:</strong>
+                                            <a class="clearfix" href="#">
+                                                <img src="img/traveloka-logo.png" alt="traveloka" />
+                                                <span class="btn btn-sm btn-danger">Rp. 900k</span>
+                                            </a>
+
+                                            <a class="clearfix" href="#">
+                                                <img src="img/tiketcom.png" alt="tiket" />
+                                                <span class="btn btn-sm btn-danger">Rp. 920k</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="#"><i class="glyphicon glyphicon-info-sign"></i> Learn how to save</a>
+                                </aside>
+                        </div>
+                        <a href="javscript:void(0)" class="icon icon-tiket-detail" data-toggle="tooltip" data-placement="top" data-title="Show Detail">&nbsp;</a>
+                    </div>
+                    
+                    <div class="list-result col">
+                            <div class="head">
+                                <div class="col-sm-11">
+                                    Bandung <span class="icon pointer"></span>
+                                    <em>Jakarta</em><span class="icon pointer"></span>
+                                    Medan <em>(10 h 20 m)</em>
+                                </div>
+                            </div>
+                            <div class="detail row">
+                                <section class="timeline col-sm-8">
+                                    <ul class="row-5 clearfix">
+                                        <li class="place">
+                                            <span class="date">Sunday, 19 Jan</span>
+                                            Bandung
+                                            <time class="icon-a icon-a-plane-up">18:00</time>
+                                        </li>
+                                        <li class="provider">
+                                            <span class="duration">5 h 10 m</span>
+                                            <img src="img/vietnam_airlines.png" />
+                                            Ipsum Airlines<br />QPR 227
+                                        </li>
+                                        <li class="transit">
+                                        	<span class="date">Sunday, 19 Jan</span>
+                                            <strong>Jakarta</strong>
+                                            <time class="icon-a plane-up-small">19:00</time>
+                                            <span class="separator"></span>
+                                            <time class="icon-a plane-down-small">22:00</time>
+                                            <span class="duration">30 m</span>
+                                        </li>
+                                        <li class="provider">
+                                            <span class="duration">5 h 10 m</span>
+                                            <img src="img/qatar_airlines.png" />
+                                            Lorem Airlines<br />QPR 227
+                                        </li>
+                                        <li class="place">
+                                            <span class="date">Monday, 20 Jan</span>
+                                            Bali
+                                            <time class="icon-a icon-a-plane-down">06:00 <br /><br />(+1H)</time>
+                                        </li>
+                                    </ul>
+                                    <ul class="row-5 facility">
+                                        <li>
+                                            Facility:
+                                            <img src="img/lunch.png" alt="" />
+                                            <img src="img/bagasi.png" alt="" />
+                                            <img src="img/tax.png" alt="" />
+                                        </li>
+                                        <li>
+                                            Facility:
+                                            <img src="img/lunch.png" alt="" />
+                                            <img src="img/bagasi.png" alt="" />
+                                            <img src="img/tax.png" alt="" />
+                                        </li>
+                                    </ul>
+                                </section>
+                                <aside class="price col-sm-4">
+                                	<div class="row">
+                                    	<div class="col-xs-5">
+                                        	<span class="coret">Rp. 992k</span>
+                                            Rp. 702k
+                                            <button class="btn btn-info">Book</button>
+                                        </div>
+                                        
+                                    	<div class="col-xs-7 third-party">
+                                        	<strong>Book Via:</strong>
+                                            <a class="clearfix" href="#">
+                                                <img src="img/traveloka-logo.png" alt="traveloka" />
+                                                <span class="btn btn-sm btn-danger">Rp. 900k</span>
+                                            </a>
+
+                                            <a class="clearfix" href="#">
+                                                <img src="img/Ticketcom.png" alt="Ticket" />
+                                                <span class="btn btn-sm btn-danger">Rp. 920k</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="#"><i class="glyphicon glyphicon-info-sign"></i> Learn how to save</a>
+                                </aside>
+                        </div>
+                        <a href="javscript:void(0)" class="icon icon-tiket-detail" data-toggle="tooltip" data-placement="top" data-title="Show Detail">&nbsp;</a>
+                    </div>
+              </section>
+            </div>
+            
+        	<!-- InstanceEndEditable -->
+        	<footer>
+        	<a href="#header" class="icon icon-flight"></a>
+        	<div class="container">
+            	<span class="icon deco"></span>
+            	<div class="row">
+                	<div class="col-sm-2 text-center">
+                    	<img class="logo" src="img/logo-white.png" alt="logo">
+                    </div>
+                    <div class="col-sm-2">
+                    	<ul>
+                        	<li><strong>Our Menu</strong></li>
+                            <li><a href="#">Press Center</a></li>
+                            <li><a href="#">Travel News</a></li>
+                            <li><a href="#">Best Price Guarantee</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                    	<ul>
+                        	<li><strong>Usefull Link</strong></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Travel News</a></li>
+                            <li><a href="#">Support Center</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                    	<ul>
+                        	<li><strong>Account</strong></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Personal Information</a></li>
+                            <li><a href="#">My Credit Slip</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 subscribe">
+                    	<strong>Subscribe</strong>
+                        <input type="email" placeholder="Your Email Address">
+                        <input type="submit" class="btn btn-info" value="Send">
+                        <div class="socmed">
+                        	Find Us : 
+                            <a href="#"><i class="icon fb"></i></a>
+                            <a href="#"><i class="icon tw"></i></a>
+                            <a href="#"><i class="icon yt"></i></a>
+                            <a href="#"><i class="icon gp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="copyright">copyrights©2015</span>
+        </footer>
+        
+    </div> <!-- /container -->        
+		<script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>	
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>	
+        <script src="js/jquery.slides.min.js"></script>	
+        <script src="js/jquery.colorbox.js"></script>	
+        <script src="js/enquire.min.js"></script>
+        <script src="js/main.js"></script>
+        <!-- InstanceBeginEditable name="js_custom" -->
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/jquery.nstSlider.js"></script>
+		<script>
+			$('.tab-pp .icon-arrow-up-pp').click(function(){
+				$(this).parent().toggleClass('det');
+			});
+			$('.tab-pp ul li').click(function(){
+				$('.tab-pp ul li').removeClass('cur');
+				$(this).addClass('cur');		
+			});
+			$('.transit.summary > a, .icon-Ticket-detail').click(function(){
+				$(this).parents('.list-result').toggleClass('col');
+			});
+
+			$(function(){
+				//range input
+				$('.nstSlider').nstSlider({
+						"left_grip_selector": ".leftGrip",
+						"right_grip_selector": ".rightGrip",
+						"value_bar_selector": ".bar",
+						"value_changed_callback": function(cause, leftValue, rightValue) {
+							$(this).parent().find('.leftLabel').text("Rp."+leftValue+"K");
+							$(this).parent().find('.rightLabel').text("Rp."+rightValue+"K");
+						}
+				});
+				
+				//slider
+				var owl = $(".slider");
+				$('.slider').owlCarousel({				 
+					  items : 5
+				});	
+				
+				  $(".next-route").click(function(){
+					owl.trigger('owl.next');
+				  });
+				  $(".prev-route").click(function(){
+					owl.trigger('owl.prev');
+				  });
+				  
+				  //datepicker
+				  $('#datepicker').datepicker();
+					$("#datepicker").on("changeDate", function(event) {
+						$("#my_hidden_input").val(
+							$("#datepicker").datepicker('getFormattedDate')
+						 )
+					});
+			});
+        </script>
+		<!-- InstanceEndEditable -->
+    </body>
+<!-- InstanceEnd --></html>
